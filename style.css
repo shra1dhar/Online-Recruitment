@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url(img/pencils-640.jpg);
+    background-size: cover;
+}
+.overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+.title{
+    font-family: 'Faster One', Scursive;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-align: center;
+    margin: 3rem auto;
+    font-size: 4rem;
+    position: relative;
+    font-weight: 100;
+}
+.bars {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffffab;
+    margin-top: -10px;
+    width: 88vw;
+    margin-left: 6vw;
+    text-decoration: none;
+    position: relative;
+}
+
+#Parent,#Student,#Teacher,#Super-Admin {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+#Parent:hover,#Student:hover,#Teacher:hover,#Super-Admin:hover {
+    transition-delay: 100ms;
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0.945);
+    cursor: pointer;
+    transform: scale(1.15);
+    text-decoration: none;
+}
+.login{
+    position: relative;
+    display: flex;
+    justify-content: left;
+    width: 60vw;
+    margin-left: 20vw;
+    /* border: 2px solid rgb(22, 21, 21); */
+    background-color: rgba(233, 232, 232, 0.486);
+    padding: 0px 0px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.head{
+    max-height: 40px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    color: #fff;;
+    padding: 10px;
+    font-family: sans-serif, arial;
+    word-spacing: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+.logo{
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    float: left !important;
+}
+.login form{
+    padding: 20px 50px;
+    width: 40vw;
+}
+.but{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.but button{
+    margin: auto 20px;
+    padding: 8px 20px;
+}
+.q{
+display: none;
+}
+
+@media screen and (max-width: 420px) {
+    #Parent,#Student,#Teacher,#Super-Admin,#leaderboard {
+        font-size: 0.7rem;
+    }
+    .bars {
+        width: 100vw;
+        margin-left: 0px;
+    }
+    .login {
+        width: 95vw;
+        margin-left: 2.5vw;
+    }
+}
