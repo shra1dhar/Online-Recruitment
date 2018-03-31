@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Velocity</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Admin.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/Admin.js"></script>
+
+</head>
+<body>
+    <h2>
+        <strong>Welcome Admin</strong>
+    </h2>
+
+             <!-- View/Edit Student's details -->
+    <div class="view-edit">
+        <div class="text-edit">
+            <h3>View/Edit Student's details:</h3>
+            <a href="">
+                <img src="img/edit-icon.png" style="float: right" alt="edit data">
+            </a>
+        </div>
+
+
+        <table class="table table-bordered">
+            <thead class = "thead-dark">
+                <tr>
+                    <th><p>Class or Standard</p><p>(DDM)</p></th>
+                    <th>Section (DDM)</th>
+                    <th>Academic year</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <thead class = "form-head">
+                <tr>
+                    <th>Sl no.</th>
+                    <th>Students name</th>
+                    <th>field 1</th>
+                    <th>field 2</th>
+                    <th>field 3</th>
+                    <th>field 4</th>
+                    <th>field 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+         <!-- Academic Year Planner -->
+    <div class="acad-yr-plan">
+        <h3>Academic Year Planner:</h3>
+        <div class="box">
+            <h4>A. Subject Planner</h4>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>
+                            <p>Class or Standard</p>
+                            <p>(DDM)</p>
+                        </th>
+                        <th>Section (DDM)</th>
+                        <th>Academic year</th>
+                    </tr>
+                </thead>
+            </table>
+            <table class="table table-bordered stack-together">
+                <thead class="form-head">
+                    <tr>
+                        <th>Sl no.</th>
+                        <th style="width: 70%">Subject</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href=""><div class = "add">
+                <p>Add <strong>+</strong></p>
+            </div></a>
+
+            <br>
+
+            <button type = "submit" class="btn btn-success">Send for approval</button>
+        </div>
+
+        <div class="box">
+            <h4>B. Examination Planner</h4>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>
+                            <p>Class or Standard</p>
+                            <p>(DDM)</p>
+                        </th>
+                        <th>Section (DDM)</th>
+                        <th>Academic year</th>
+                    </tr>
+                </thead>
+            </table>
+            <table class="table table-bordered stack-together">
+                <thead class="form-head">
+                    <tr>
+                        <th>Test/Examination name (Eg: Unit Test 1)</th>
+                        <th>Month‐year (mmm‐yyyy – DDM)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Unit Test - 1</td>
+                        <td>04/2018</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href=""><div class = "add">
+                <p>Add <strong>+</strong></p>
+            </div></a>
+            <br>
+
+            <button type = "submit" class="btn btn-success">Send for approval</button>
+        </div>
+
+        <div class="box">
+            <h4>C. Event Planner</h4>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>
+                            <p>Class or Standard</p>
+                            <p>(DDM)</p>
+                        </th>
+                        <th>Section (DDM)</th>
+                        <th>Academic year</th>
+                    </tr>
+                </thead>
+            </table>
+            <table class="table table-bordered stack-together">
+                <thead class="form-head">
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Event Description</th>
+                        <th>Date of the Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fest</td>
+                        <td>Lorem Ipsum</td>
+                        <td>27-03-2018</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="">
+                <div class="add">
+                    <p>Add
+                        <strong>+</strong>
+                    </p>
+                </div>
+            </a>
+            <br>
+
+            <button type = "submit" class="btn btn-success">Send for approval</button>
+        </div>
+
+        <div class="box">
+            <h4>D. Gradation System</h4>
+            <br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Marks Based</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">Grade Based</label>
+            </div>
+            <br>
+
+            <button type = "submit" class="btn btn-success">Send for approval</button>
+        </div>
+    </div>
+
+
+        <!-- Report Generation -->
+    <div class="rep-gen">
+        <h3>Report Generation</h3>
+        <br>
+        <br>
+        <div class = "rep-gen-box">
+            <p><em>a. Attendance Report</em></p>
+            <form>
+                <div class="form-group">
+                    <label for="drop1">Class</label>
+                    <select class="form-control form-check form-check-inline" id="drop1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="drop2">Section</label>
+                    <select class="form-control form-check form-cgeck-inline" id="drop2">
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Generate Report</button>
+            </form>
+        </div>
+
+        <div class = "rep-gen-box">
+            <p><em>b. Marks Sheet Template</em></p>
+            <form>
+                <div class="form-group">
+                    <label for="drop3">Test/Exam</label>
+                    <select class="form-control form-check form-check-inline" id="drop3">
+                        <option>Unit Test 1</option>
+                        <option>Unit Test 2</option>
+                        <option>Unit Test 3</option>
+                        <option>Unit Test 4</option>
+                        <option>Unit Test 5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="drop4">Class</label>
+                    <select class="form-control form-check form-cgeck-inline" id="drop4">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Generate Template</button>
+            </form>
+        </div>
+
+        <div class="rep-gen-box align-3">
+            <p><em>c. Progress Report</em></p>
+            <form>
+                <div class="form-group">
+                    <label for="drop5">Class</label>
+                    <select class="form-control form-check form-cgeck-inline" id="drop5">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="drop7">Section</label>
+                    <select class="form-control form-check form-check-inline" id="drop6">
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="drop4">Student</label>
+                    <select class="form-control form-check form-cgeck-inline" id="drop7">
+                        <option>Lorem</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Generate Report</button>
+            </form>
+        </div>
+
+        <div class="rep-gen-box">
+            <p><em>d. Any Customizable Reports</em></p>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

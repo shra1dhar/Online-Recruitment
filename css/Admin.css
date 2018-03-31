@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    box-sizing: border-box;
+    background-color: rgba(204, 231, 235, 0.397);
+}
+h2{
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+    /* text-decoration: underline; */
+    color: #fff;
+    background-color: rgb(27, 43, 117);
+}
+.text-edit{
+    padding: 10px 25px;
+    padding-top: 100px;
+}
+/* .view-edit table p {
+    line-height: 0.4rem;
+} */
+img, h3{
+    display: inline;
+}
+tr:nth-child(even){
+    background-color: rgba(255, 188, 129, 0.726);
+}
+tr:nth-child(odd){
+    background-color: peachpuff;
+}
+.form-head tr{
+    color: #fff;
+    background-color: rgb(27, 43, 117) !important;
+    width: 100vw;
+}
+.thead-dark td{
+    display: inline;
+}
+.acad-yr-plan h3, .acad-yr-plan h4{
+    padding-left: 25px;
+}
+.stack-together{
+    margin-top: -1rem;
+}
+.box{
+    margin-top: 120px;
+}
+.box button{
+    display: block;
+    margin: 70px auto;
+}
+.table p{
+    line-height: 0.4rem;
+}
+.add {
+    box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+    background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5', GradientType=0);
+    background-color: #79bbff;
+    border-radius: 6px;
+    border: 1px solid #84bbf3;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
+    height: 40px;
+    margin-left: 25px;
+}
+.add:hover {
+    background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff', GradientType=0);
+    background-color: #378de5;
+}
+.add:active {
+    position: relative;
+    top: 1px;
+}
+.box .form-check{
+    margin-left: 27vw;
+    font-size: 1.3rem;
+}
+.rep-gen h3{
+    margin-left: 25px;
+}
+.rep-gen form .form-group{
+    width: 100px;
+    display: inline-block;
+    margin-left: 29vw;
+}
+.rep-gen form button{
+    display: block;
+    margin: 50px auto;
+}
+.rep-gen-box p {
+    text-decoration-line: underline;
+    margin-left: 25px;
+}
+.align-3 form .form-group{
+    margin-left:  20vw;
+}
