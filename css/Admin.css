@@ -6,6 +6,9 @@ body{
     box-sizing: border-box;
     background-color: rgba(204, 231, 235, 0.397);
 }
+.q{
+    display: none;
+}
 h2{
     padding: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -13,15 +16,106 @@ h2{
     color: #fff;
     background-color: rgb(27, 43, 117);
 }
-.text-edit{
+.btn-wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    /* background-color: #333333; */
+}
+.myBtn1 {
+    box-shadow: 0px 1px 0px 0px #1c1b18;
+    background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6', GradientType=0);
+    background-color: #eae0c2;
+    color: #505739;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+.myBtn1:hover {
+    background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2', GradientType=0);
+    background-color: #ccc2a6;
+}
+.myBtn2 {
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315', GradientType=0);
+    background-color: #d0451b;
+    border: 1px solid #942911;
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 0px 1px 0px #854629;
+}
+.myBtn2:hover {
+    background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b', GradientType=0);
+    background-color: #bc3315;
+}
+.myBtn3 {
+    box-shadow: inset 0px 1px 0px 0px #a4e271;
+    background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809', GradientType=0);
+    background-color: #89c403;
+    border: 1px solid #74b807;
+    color: #ffffff;
+    text-shadow: 0px 1px 0px #528009;
+}
+.myBtn3:hover {
+    background: -ms-linear-gradient(top, #77a809 5%, #89c403 100%);
+    background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77a809', endColorstr='#89c403', GradientType=0);
+    background-color: #77a809;
+}
+.myBtn1:active,myBtn2:active,myBtn3:active {
+    position: relative;
+    top: 1px;
+}
+.myBtn1, .myBtn2, .myBtn3{
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 4px 30px;
+    font-family: Arial;
+    max-height: 40px;
+}
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1000000;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+#myBtn:hover {
+    background-color: #555;
+}
+.text-edit h3{
     padding: 10px 25px;
-    padding-top: 100px;
+    padding-top: 0px;
+}
+.text-edit form{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.text-edit form .form-group .form-control{
+    width: 30vw;
+}
+.text-edit form .form-group, .text-edit form button{
+    margin: 5px;
 }
 /* .view-edit table p {
     line-height: 0.4rem;
 } */
-img, h3{
+h3{
     display: inline;
+    padding-left: 25px;
 }
 tr:nth-child(even){
     background-color: rgba(255, 188, 129, 0.726);
@@ -44,7 +138,8 @@ tr:nth-child(odd){
     margin-top: -1rem;
 }
 .box{
-    margin-top: 120px;
+    margin-top: 50px;
+    margin-bottom:100px;
 }
 .box button{
     display: block;
@@ -104,3 +199,5 @@ tr:nth-child(odd){
 .align-3 form .form-group{
     margin-left:  20vw;
 }
+
+    /* Student-Login */

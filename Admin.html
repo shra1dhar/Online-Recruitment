@@ -9,24 +9,32 @@
     <link rel="stylesheet" href="css/Admin.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/Admin.js"></script>
-
 </head>
 <body>
     <h2>
         <strong>Welcome Admin</strong>
     </h2>
+            <!-- buttons -->
+    <div class="btn-wrapper">
+        <div class = "myBtn1"><p>View/Edit Students' Details</p></div>
+        <div class = "myBtn2"><p>Academic Year Planner</p></div>
+        <div class = "myBtn3"><p>Report Generation</p></div>
+    </div>
 
              <!-- View/Edit Student's details -->
     <div class="view-edit">
+        <h3>View/Edit Student's details:</h3>
+        <button onclick="topFunction()" id="myBtn">Top</button>
         <div class="text-edit">
-            <h3>View/Edit Student's details:</h3>
-            <a href="">
-                <img src="img/edit-icon.png" style="float: right" alt="edit data">
-            </a>
+            <form class="form-inline">
+                <div class="form-group mb-2">
+                    <label for="search-name"></label>
+                    <input type="text" class="form-control" id="search-name" placeholder="Name">
+                </div>
+                <button type="submit" class="btn btn-success mb-2">Search</button>
+                <a href="secondary/student-form.html" class="btn btn-warning mb-2">+ Add</a>
+            </form>
         </div>
-
-
         <table class="table table-bordered">
             <thead class = "thead-dark">
                 <tr>
@@ -84,7 +92,7 @@
 
 
          <!-- Academic Year Planner -->
-    <div class="acad-yr-plan">
+    <div class="acad-yr-plan q">
         <h3>Academic Year Planner:</h3>
         <div class="box">
             <h4>A. Subject Planner</h4>
@@ -220,7 +228,7 @@
 
 
         <!-- Report Generation -->
-    <div class="rep-gen">
+    <div class="rep-gen q">
         <h3>Report Generation</h3>
         <br>
         <br>
@@ -283,7 +291,7 @@
             <form>
                 <div class="form-group">
                     <label for="drop5">Class</label>
-                    <select class="form-control form-check form-cgeck-inline" id="drop5">
+                    <select class="form-control form-check form-check-inline" id="drop5">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -301,7 +309,7 @@
                 </div>
                 <div class="form-group">
                     <label for="drop4">Student</label>
-                    <select class="form-control form-check form-cgeck-inline" id="drop7">
+                    <select class="form-control form-check form-check-inline" id="drop7">
                         <option>Lorem</option>
                     </select>
                 </div>
@@ -321,6 +329,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
