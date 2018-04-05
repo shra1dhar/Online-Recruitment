@@ -19,6 +19,7 @@ $("#Teacher").click( () => {
     $(".T").removeClass("q");
 });
 
+    // ****************************
 // Admin Page hide-show bars *********
 $(".myBtn1").click( () => {
     $(".acad-yr-plan, .rep-gen").addClass("q");
@@ -46,3 +47,6 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+    // ****************************
+    // Super-Admin

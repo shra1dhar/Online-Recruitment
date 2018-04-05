@@ -60,12 +60,11 @@ h2{
     text-shadow: 0px 1px 0px #528009;
 }
 .myBtn3:hover {
-    background: -ms-linear-gradient(top, #77a809 5%, #89c403 100%);
     background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77a809', endColorstr='#89c403', GradientType=0);
     background-color: #77a809;
 }
-.myBtn1:active,myBtn2:active,myBtn3:active {
+.myBtn1:active, .myBtn2:active, .myBtn3:active {
     position: relative;
     top: 1px;
 }
