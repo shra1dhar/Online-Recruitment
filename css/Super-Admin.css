@@ -12,6 +12,39 @@ h2{
     background-color: rgb(27, 43, 117);
     padding: 30px;
 }
+.right{
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px;
+}
+.add {
+    box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+    background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5', GradientType=0);
+    background-color: #79bbff;
+    border-radius: 6px;
+    border: 1px solid #84bbf3;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
+    height: 40px;
+    margin: 5px;
+
+}
+.add:hover {
+    background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff', GradientType=0);
+    background-color: #378de5;
+}
+.add:active {
+    position: relative;
+    top: 1px;
+}
 .Main-Btn {
     box-shadow: inset 0px 1px 0px 0px #fff6af;
     background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
@@ -29,7 +62,7 @@ h2{
     padding: 6px 24px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #ffee66;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 .Main-Btn:hover {
     background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
@@ -104,9 +137,19 @@ h2{
     font-family: Arial;
     max-height: 40px;
 }
-.sunshine{
+.sunshine, .btn-wrap{
     display: flex;
     justify-content: space-evenly;
     /* margin-top: -15px; */
     padding: 30px;
+    flex-wrap: wrap;
+}
+.btn-wrap{
+    margin-top: 100px;
+}
+.btn-wrap p{
+    display: block !important;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: rgba(134, 134, 134, 0.301) */
 }

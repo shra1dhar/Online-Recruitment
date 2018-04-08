@@ -50,3 +50,27 @@ function topFunction() {
 
     // ****************************
     // Super-Admin
+$(".MB1").click( () => {
+    $(".bw1").toggle();
+    $(".bw2").hide();
+    $(".btn-wrap").hide();
+});
+$(".MB2").click(() => {
+    $(".bw2").toggle();
+    $(".bw1").hide();
+});
+$(".Btn1").click( () => {
+    $(".BW1").toggle();
+    $(".BW2").hide();
+    $(".BW3").hide();
+});
+$(".Btn2").click(() => {
+    $(".BW2").toggle();
+    $(".BW1").hide();
+    $(".BW3").hide();
+});
+$(".Btn3").click(() => {
+    $(".BW3").toggle();
+    $(".BW2").hide();
+    $(".BW1").hide();
+});

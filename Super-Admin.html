@@ -16,33 +16,119 @@
         <strong>Welcome Super-Admin</strong>
     </h2>
 
+    <div class = "right">
+        <a href="seconday-SA/new-teacher.html"><div class = "add"><p>Add Teacher</p></div></a>
+        <a href="seconday-SA/new-admin.html"><div class = "add"><p>Add Admin</p></div></a>
+    </div>
+
+
     <!-- buttons -->
     <div class = "sunshine">
-        <div class = "Main-Btn">
+        <div class = "Main-Btn MB1">
             <p>Event Planner</p>
         </div>
-        <div class = "Main-Btn">
+        <div class = "Main-Btn MB2">
             <p>Approve Updates</p>
         </div>
     </div>
 
-    <div class="btn-wrapper">
-        <div class="Btn1">
-            <p>Enable Subject Planner</p>
+    <div class="btn-wrapper bw1">
+        <div>
+            <form action="" method="post">
+                <button type="submit" method="post" class="Btn1">
+                    <p>Enable Subject Planner</p>
+                </button>
+            </form>
         </div>
-        <div class="Btn2">
-            <p>Enable Examination Planner</p>
+        <div>
+            <form action="" method="post">
+                <button type="submit" class="Btn2">
+                    <p>Enable Examination Planner</p>
+                </button>
+            </form>
         </div>
-        <div class="Btn3">
-            <p>Enable Event planner</p>
+        <div>
+            <form action="" method="post">
+                <button type="submit" class="Btn3">
+                    <p>Enable Event planner</p>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="btn-wrapper bw2">
+        <div>
+                <button class="Btn1">
+                    <p>Subject Planner</p>
+                </button>
+        </div>
+
+        <div>
+                <button class="Btn2">
+                    <p>Examination Planner</p>
+                </button>
+        </div>
+        <div>
+                <button type="submit" class="Btn3">
+                    <p>Event planner</p>
+                </button>
+        </div>
+    </div>
+
+    <div class = "btn-wrap BW1">
+        <div style = "width: 100vw">
+            <p>Subject Planner</p>
+        </div>
+        <div>
+            <form action="" method="post">
+                <button type="submit" class = "btn btn-success">Approved</button>
+            </form>
+        </div>
+        <div>
+            <form action="" method="post">
+                <button type="submit" class = "btn btn-danger">Rejected</button>
+            </form>
+        </div>
+    </div>
+    <div class="btn-wrap BW2">
+        <div style="width: 100vw">
+            <p>Examination Planner</p>
+        </div>
+        <div>
+            <form action="" method="post">
+                <button type="submit" class="btn btn-success">Approved</button>
+            </form>
+        </div>
+        <div>
+            <form action="" method="post">
+                <button type="submit" class="btn btn-danger">Rejected</button>
+            </form>
+        </div>
+    </div>
+    <div class="btn-wrap BW3">
+        <div style="width: 100vw">
+            <p>Event Planner</p>
+        </div>
+        <div>
+            <form action="" method="post">
+                <button type="submit" class="btn btn-success">Approved</button>
+            </form>
+        </div>
+        <div>
+            <form action="" method="post">
+                <button type="submit" class="btn btn-danger">Rejected</button>
+            </form>
         </div>
     </div>
 
 
-
-
-
-
+    <script>
+    $(".bw1").hide();
+    $(".bw2").hide();
+    $(".BW1").hide();
+    $(".BW2").hide();
+    $(".BW3").hide();
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
