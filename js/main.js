@@ -21,18 +21,18 @@ $("#Teacher").click( () => {
 
     // ****************************
 // Admin Page hide-show bars *********
-$(".myBtn1").click( () => {
-    $(".acad-yr-plan, .rep-gen").addClass("q");
-    $(".view-edit").removeClass("q");
-});
-$(".myBtn2").click( () => {
-    $(".view-edit, .rep-gen").addClass("q");
-    $(".acad-yr-plan").removeClass("q");
-});
-$(".myBtn3").click( () => {
-    $(".view-edit, .acad-yr-plan").addClass("q");
-    $(".rep-gen").removeClass("q");
-});
+// $(".myBtn1").click( () => {
+//     $(".acad-yr-plan, .rep-gen").addClass("q");
+//     $(".view-edit").removeClass("q");
+// });
+// $(".myBtn2").click( () => {
+//     $(".view-edit, .rep-gen").addClass("q");
+//     $(".acad-yr-plan").removeClass("q");
+// });
+// $(".myBtn3").click( () => {
+//     $(".view-edit, .acad-yr-plan").addClass("q");
+//     $(".rep-gen").removeClass("q");
+// });
     // go to top
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {

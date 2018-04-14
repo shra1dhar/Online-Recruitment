@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Velocity</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Admin.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<style>
+    .container{
+        margin-top: 100px;
+        border: 1px solid #000;
+        padding: 10x;
+        background-color: rgba(124, 188, 214, 0.219);
+    }
+    .container p{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .xD{
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        margin: 40px auto;
+    }
+    .align{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class = "container">
+        <p>
+            Fill the Details:
+        </p>
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom01">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name"required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom02">Middle name</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Middle Name">
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom0">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom0" placeholder="Last name" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class = "form-row align">
+                <div class="form-group col-md-4 mb-3">
+                    <label for="drop5">Class</label>
+                    <select class="form-control form-check form-check-inline" id="drop5">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4 mb-3">
+                    <label for="drop7">Section</label>
+                    <select class="form-control form-check form-check-inline" id="drop6">
+                        <option>A</option>
+                        <option>B</option>
+                        <option>C</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4 mb-4">
+                    <label for="validationCustom05">Admission No.</label>
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="Admission Number" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid Admission Number.
+                    </div>
+                </div>
+            </div>
+            <div class = "xD">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+</html>

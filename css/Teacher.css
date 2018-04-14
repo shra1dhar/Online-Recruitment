@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    box-sizing: border-box;
+    background: rgba(204, 231, 235, 0.493);
+}
+h2 {
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff !important;
+    background-color: rgb(27, 43, 117);
+}
+.btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.myTeachBtn1 {
+    box-shadow: 0px 1px 0px 0px #1c1b18;
+    background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6', GradientType=0);
+    background-color: #eae0c2;
+    color: #505739;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+.myTeachBtn1:hover {
+    background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2', GradientType=0);
+    background-color: #ccc2a6;
+}
+.myTeachBtn2 {
+    box-shadow: inset 0px 1px 0px 0px #cf866c;
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315', GradientType=0);
+    background-color: #d0451b;
+    border: 1px solid #942911;
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 0px 1px 0px #854629;
+}
+.myTeachBtn2:hover {
+    background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b', GradientType=0);
+    background-color: #bc3315;
+}
+.myTeachBtn3 {
+    box-shadow: inset 0px 1px 0px 0px #a4e271;
+    background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809', GradientType=0);
+    background-color: #89c403;
+    border: 1px solid #74b807;
+    color: #ffffff;
+    text-shadow: 0px 1px 0px #528009;
+}
+.myTeachBtn3:hover {
+    background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77a809', endColorstr='#89c403', GradientType=0);
+    background-color: #77a809;
+}
+.myTeachBtn4 {
+    box-shadow: inset 0px 0px 15px 3px #23395e;
+    background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e466e', endColorstr='#415989', GradientType=0);
+    background-color: #2e466e;
+    border: 1px solid #1f2f47;
+    color: #ffffff;
+    text-shadow: 0px 1px 0px #263666;
+}
+.myTeachBtn4:hover {
+    background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#415989', endColorstr='#2e466e', GradientType=0);
+    background-color: #415989;
+}
+.myTeachBtn5 {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23', GradientType=0);
+    background-color: #ffec64;
+    border: 1px solid #ffaa22;
+    cursor: pointer;
+    color: #333333;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+.myTeachBtn5:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64', GradientType=0);
+    background-color: #ffab23;
+}
+.myTeachBtn6 {
+    box-shadow: inset 0px 1px 0px 0px #a6827e;
+    background: linear-gradient(to bottom, #7d5d3b 5%, #634b30 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d5d3b', endColorstr='#634b30', GradientType=0);
+    background-color: #7d5d3b;
+    border: 1px solid #54381e;
+    color: #ffffff;
+    text-shadow: 0px 1px 0px #4d3534;
+}
+.myTeachBtn6:hover {
+    background: linear-gradient(to bottom, #634b30 5%, #7d5d3b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#634b30', endColorstr='#7d5d3b', GradientType=0);
+    background-color: #634b30;
+}
+.myTeachBtn1:active,.myTeachBtn2:active,.myTeachBtn3:active,.myTeachBtn4:active,.myTeachBtn5:active,.myTeachBtn6:active {
+    position: relative;
+    top: 1px;
+}
+.myTeachBtn1,.myTeachBtn2,.myTeachBtn3,.myTeachBtn4,.myTeachBtn5,.myTeachBtn6 {
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 4px 30px;
+    font-family: Arial;
+    max-height: 40px;
+    margin-bottom: 12px;
+}
+.At-Reg div{
+    margin: 15px 60px;
+}
+.gen-btn{
+    align-self: flex-end;
+}
