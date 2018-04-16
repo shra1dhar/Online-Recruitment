@@ -12,19 +12,35 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 </head>
-
+<style>
+    .text-edit h3{
+        padding: 10px 25px;
+        padding-top: 0px;
+    }
+    .text-edit form{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .text-edit form .form-group .form-control{
+        width: 30vw;
+    }
+    .text-edit form .form-group, .text-edit form button{
+        margin: 5px;
+    }
+</style>
 <body>
     <h2>
         <strong>Welcome Super-Admin</strong>
     </h2>
 
     <div class="right">
-        <a href="seconday-SA/new-teacher.html">
+        <a href="../seconday-SA/new-teacher.html">
             <div class="add">
                 <p>Add Teacher</p>
             </div>
         </a>
-        <a href="seconday-SA/new-admin.html">
+        <a href="../seconday-SA/new-admin.html">
             <div class="add">
                 <p>Add Admin</p>
             </div>
@@ -44,17 +60,17 @@
 
     <div class="btn-wrapper bw1">
         <div>
-            <a href="seconday-SA/sub-plan.html">
+            <a href="#">
                 <p class="Btn1">Subject Planner</p>
             </a>
         </div>
         <div>
-            <a href="seconday-SA/exam-plan.html">
+            <a href="exam-plan.html">
                 <p class="Btn2">Examination Planner</p>
             </a>
         </div>
         <div>
-            <a href="seconday-SA/event-plan.html">
+            <a href="event-plan.html">
                 <p class="Btn3">Event Planner</p>
             </a>
         </div>
@@ -62,28 +78,97 @@
 
     <div class="btn-wrapper bw2">
         <div>
-            <a href="seconday-SA/Enab-sub-plan.html">
+            <a href="Enab-sub-plan.html">
                 <p class="Btn1">Enable Subject Planner</p>
             </a>
         </div>
 
         <div>
-            <a href="seconday-SA/enab-exam-plan.html">
+            <a href="enab-exam-plan.html">
                 <p class="Btn2">Enable Examination Planner</p>
             </a>
         </div>
         <div>
-            <a href="seconday-SA/enab-event-plan.html">
+            <a href="enab-event-plan.html">
                 <p class="Btn3">Enable Event planner</p>
             </a>
         </div>
     </div>
 
+    <div class="text-edit">
+        <form class="form-inline">
+            <div class="form-group mb-2">
+                <label for="search-name"></label>
+                <input type="search" class="form-control" id="search-name" placeholder="Name">
+            </div>
+            <button type="submit" class="btn btn-success mb-2">Search</button>
+        </form>
+
+    </div>
+
+    <h4>Subject Planner</h4>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>
+                    <p>Class or Standard</p>
+                    <p>(DDM)</p>
+                </th>
+                <th>Section (DDM)</th>
+                <th>Academic year</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <thead class="form-head">
+            <tr  style="background-color:rgb(27, 43, 117); color:#fff">
+                <th>Sl no.</th>
+                <th>Students name</th>
+                <th>Class</th>
+                <th>Section</th>
+                <th>Academic Year</th>
+                <th>field 4</th>
+                <th>field 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Doe</td>
+                <td>12</td>
+                <td>A</td>
+                <td>2018</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Moe</td>
+                <td>12</td>
+                <td>B</td>
+                <td>2018</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Dooley</td>
+                <td>12</td>
+                <td>A</td>
+                <td>2018</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
 
 
 
 
-    <div class="btn-wrap BW1">
+
+    <!-- <div class="btn-wrap BW1">
         <div style="width: 100vw">
             <p>Enable Subject Planner</p>
         </div>
@@ -97,11 +182,11 @@
                 <button type="submit" class="btn btn-danger">Rejected</button>
             </form>
         </div>
-    </div>
+    </div> -->
 
     <script>
-        // $(".bw1").hide();
-        // $(".bw2").hide();
+        $(".bw1").hide();
+        $(".bw2").hide();
         // $(".BW1").hide();
         // $(".BW2").hide();
         // $(".BW3").hide();
@@ -109,7 +194,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
