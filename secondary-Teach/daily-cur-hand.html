@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,66 +12,66 @@
 </head>
 <style>
     @media screen and (min-width: 992px) {
-        .table-responsive{
+        .table-responsive {
             max-width: 90vw;
             margin: 5vw;
         }
     }
+
     tr:nth-child(even) {
         background-color: rgba(255, 188, 129, 0.726);
     }
+
     tr:nth-child(odd) {
         background-color: peachpuff;
     }
-    input{
+
+    input {
         transform: scale(1.5);
         padding: 2em;
     }
 </style>
+
 <body>
 
     <div class="TABLE table-responsive">
         <h3>
-            Attendence
+            Daily Curriculam Handbook
         </h3>
         <table class="table">
-            <form>
                 <thead style>
                     <tr style="background-color: rgb(27, 43, 117); color: #fff">
-                        <th scope="col">Sno.</th>
-                        <th scope="col">#</th>
-                        <th scope="col">Name</th>
+                        <th scope="col">Chapter Number</th>
+                        <th scope="col">Page No.</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Applicable to Test</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Present
-                                </label>
-                            </div>
-                        </td>
-                        <td>Jishnu</td>
+                        <td>3</td>
+                        <td>First is about animals and birds</td>
+                        <td>yes</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" checked>
-                                <label class="form-check-label" for="defaultCheck1">
-                                    Present
-                                </label>
-                            </div>
-                        </td>
-                        <td>Shravan</td>
+                        <td>14</td>
+                        <td>First is about metals amd non-metals</td>
+                        <td>no</td>
                     </tr>
                 </tbody>
             </form>
         </table>
     </div>
+
+    <a href="chapter.html">
+        <div class="add">
+            <p>Add
+                <strong>+</strong>
+            </p>
+        </div>
+    </a>
 
 
 
@@ -80,4 +81,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="../js/main.js"></script>
 </body>
+
 </html>
