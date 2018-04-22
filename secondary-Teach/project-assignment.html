@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Velocity</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../css/Teacher.css">
+</head>
+<style>
+    @media screen and (min-width: 992px) {
+        .table-responsive {
+            max-width: 90vw;
+            margin: 5vw;
+        }
+    }
+
+    tr:nth-child(even) {
+        background-color: rgba(255, 188, 129, 0.726);
+    }
+
+    tr:nth-child(odd) {
+        background-color: peachpuff;
+    }
+
+    input {
+        transform: scale(1.5);
+        padding: 2em;
+    }
+</style>
+
+<body>
+    <div class="TABLE table-responsive">
+        <h3>
+            Project Assignment
+        </h3>
+        <table class="table">
+                <thead>
+                    <tr style="background-color: rgb(27, 43, 117); color: #fff">
+                        <th scope="col">Project Description</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Send Reminder</th>
+                        <th scope="col">Applicable Students</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>This test will have MCQ</td>
+                        <td>27-03-2018</td>
+                        <td>25-03-18</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+        </table>
+    </div>
+
+    <a href="add-project.html">
+        <div class="add">
+            <p>Add
+                <strong>+</strong>
+            </p>
+        </div>
+    </a>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
