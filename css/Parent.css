@@ -12,6 +12,10 @@ h2 {
     color: #fff !important;
     background-color: rgb(27, 43, 117);
 }
+h3{
+    font-family: 'Open Sans',sans-serif;
+    margin-left: 50px;
+}
 a {
     text-decoration: none !important;
     text-decoration-color: none;
@@ -153,7 +157,17 @@ a {
     max-height: 40px;
     margin-bottom: 12px;
 }
-
+tr:nth-child(even) {
+    background-color: rgba(255, 188, 129, 0.726);
+}
+tr:nth-child(odd) {
+    background-color: peachpuff;
+}
+.form-head tr {
+    color: #fff;
+    background-color: rgb(27, 43, 117) !important;
+    width: 100vw;
+}
 
 
 
