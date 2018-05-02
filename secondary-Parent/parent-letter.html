@@ -12,14 +12,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <style>
-    .note{
+    .note {
         color: #fff;
         background-color: black;
-        text-align: center;
+        /* text-align: center; */
         padding: 10px;
         margin-bottom: -1px;
+        padding-left: 15x;
+        padding-right: 15px;
+    }
+
+    #RIGHT {
+        display: block;
+        float: right;
     }
 </style>
+
 <body>
     <!-- head -->
     <h2>
@@ -60,30 +68,25 @@
     </div>
     <br>
     <h3>
-        c. Notifications
+        f. Leave letter for student
     </h3>
-    <table class="table table-bordered">
-        <p class = "note">Notification</p>
-        <thead class="form-head">
-            <tr>
-                <th>Date</th>
-                <th>Event</th>
-                <th>Due Date</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>27-03-2018</td>
-                <td>Text as typed by School</td>
-                <td>05-05-2018</td>
-            </tr>
-            <tr>
-                <td>27-03-2018</td>
-                <td>Text as typed by School</td>
-                <td>05-05-2018</td>
-            </tr>
-        </tbody>
-    </table>
+    <br>
+    <form action="">
+        <div class="row">
+            <div class="col-sm-10 offset-1 form-group">
+                <label><strong>Enter your letter</strong></label>
+                <textarea placeholder="Enter tyour message here" rows=" 6" class="form-control" name="my-name"
+                    id="my-input" maxlength="160"></textarea>
+                <span id='remainingC'></span>
+            </div>
+        </div>
+        <br>
+        <div>
+            <button type="submit" class="btn btn-success mb-3 offset-1">Submit</button>
+            <!-- <button type="" class="btn mb-3">Add Supporting Document</button> -->
+            <input type="file" name="Add Supporting Document" id="document" class = "btn mb-3">
+        </div>
+    </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -91,4 +94,23 @@
     <script src="../js/main.js"></script>
 </body>
 
+<script>
+    $(document).ready(function () {
+            var len = 0;
+            var maxchar = 160;
+
+            $('#my-input').keyup(function () {
+                len = this.value.length
+                if (len > maxchar) {
+                    return false;
+                }
+                else if (len > 0) {
+                    $("#remainingC").html("Remaining characters: " + (maxchar - len));
+                }
+                else {
+                    $("#remainingC").html("Remaining characters: " + (maxchar));
+                }
+            })
+        });
+</script>
 </html>
